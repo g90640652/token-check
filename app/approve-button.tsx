@@ -67,7 +67,7 @@ export default function ApproveButton({
     <>
       {isSendError && (
         <div className="p-4 rounded-lg bg-red-500/50 text-sm text-red-300">
-          {(sendError as any)?.shortMessage}
+          {sendError.message}
         </div>
       )}
       <button
